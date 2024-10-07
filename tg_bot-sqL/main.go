@@ -13,14 +13,12 @@ func main() {
         log.Fatalf("Помилка ініціалізації бази даних: %v", err)
     }
 
-<<<<<<< HEAD
     // Запускаємо Telegram бота
     err = bot.StartBot()
     if err != nil {
         log.Fatalf("Помилка запуску бота: %v", err)
     }
 }
-=======
 	database.CreateTable(db)
 
 	database.AddUser(db, "Вася", 28)
@@ -47,4 +45,3 @@ func main() {
 		fmt.Printf("ID: %d, Ім'я: %s, Вік: %d\n", user.ID, user.Name, user.Age)
 	}
 }
->>>>>>> 14870955344d5ae401485de3c994b08cc46353fe
